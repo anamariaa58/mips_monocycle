@@ -8,7 +8,7 @@ module PC_TB;
         .Clk(Clk),
         .Rst(Rst),
         .nextPC(nextPC),
-        .PC(PC)
+        .Pc(Pc)
     );
 
     always #5 Clk = ~Clk;
