@@ -12,7 +12,7 @@ module MUX3x1 #(parameter WIDTH = 32)(
             2'b00: out = in0; // PC_PLUS_4
             2'b01: out = in1; // PC_BRANCH
             2'b10: out = in2; // JUMP
-            default: out = {WIDTH{1'bz}};
+            default: out = {WIDTH{1'bx}};
         endcase
     end
 endmodule
